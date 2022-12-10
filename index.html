@@ -436,12 +436,79 @@
             </li>
           </ul>
         </div>
+        <form class="newsletter-form">
+          <label for="email-footer">Підпишіться на розсилку</label>
+          <div class="newsletter-form-wrapper">
+            <input type="email" name="email-footer" id="email-footer" placeholder="E-mail">
+            <button type="submit" class="newsletter-form-btn">Підписатися
+              <svg class="newsletter-form-icon" width="24" hieght="24">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn" data-modal-close>&times;</button>
+        <button class="modal-btn" data-modal-close>&times;
+        </button>
+        <form class="form order-servise-form">
+          <b class="order-servise-title" >Залиште свої дані, ми вам передзвонимо</b>
+          <div class="servise-form-field">
+            <label class="order-servise-label" for="name">Ім'я</label>
+            <div class="servise-form-wrapper">
+              <input type="text" name="name" id="name" required>
+              <svg class="icon-form" width="18" height="18">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-person-black" ></use>
+              </svg>
+            </div>
+          </div>
+  
+          <div class="servise-form-field">
+            <label class="order-servise-label" for="tel">Телефон</label>
+            <div class="servise-form-wrapper">
+              <input type="tel" name="tel" id="tel" required>
+              <svg class="icon-form" width="18" height="18">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-phone-black" ></use>
+              </svg>
+            </div>
+          </div>
+  
+          <div class="servise-form-field">
+            <label  class="order-servise-label" for="email">Пошта</label>
+            <div class="servise-form-wrapper">
+              <input type="email" name="email" id="email" required>
+              <svg class="icon-form" width="18" height="18">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-email-black" ></use>
+              </svg>
+            </div>
+          </div>
+         
+          <div class="servise-form-field">
+            <label class="order-servise-label" for="comment" >Коментар</label>
+            <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
+          </div>
+          
+          <div class="servise-form-checkbox">
+            <input type="checkbox" name="policy" id="policy" required class="servise-form-check visually-hidden">
+            <label class="form-checkbox-label" for="policy">
+              <span class="servise-checkbox-icon">
+                <svg class="icon-form-checkbox" width="16" height="16">
+                  <use href="./images/icons.svg/symbol-defs.svg#icon-sheck" ></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю <a href="" target="_blank"
+              rel="noreferrer">Умови договору</a>
+            </label>
+          </div>
+
+          <div class="servise-form-btn">
+            <button class="form-btn" type="submit" >Відправити</button>
+          </div>
+        </form>
       </div>
+      
     </div>
     <script src="./js/modal.js"></script>
   </body>
